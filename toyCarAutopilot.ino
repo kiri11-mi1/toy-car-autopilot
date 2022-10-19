@@ -24,8 +24,8 @@
 
 #define DISTANCE_TO_BLOCKAGE_CM 50  // Дистанция до препятcтвия
 
-#define SPEED_CAR_MAX 240  // В будущем переименовать
-#define SPEED_CAR_MIN 200  // В будущем переименовать
+#define SPEED_CAR_MAX 240  // Максимальная скорость движения машинки
+#define SPEED_CAR_MIN 200  // Минимальная скорость движения машинки
 #define TIME_MOVING 1000   // Время движения по заданной траектории
 
 
