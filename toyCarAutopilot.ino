@@ -78,10 +78,7 @@ void loop() {
   FullPrintData(maxScannerDataByDistance);
   Serial.println("---------------------------------------");
 
-  int currentWheelsAngle = wheels.read();  // Текущее положение серво двигателя колёс
-  delay(500);
-  int scannerAngleByWheels = GetScannerAngle(currentWheelsAngle);  // Конвертируем значения угла сканера в угол колёс
-  scanner.write(scannerAngleByWheels);                             // Поворот сканерра на новый угол
+  scanner.write(SCANNER_FORWARD);  // Поворот сканерра на новый угол
   delay(500);
   int currentDistance = sonar.ping_cm();            // Текушая дистанция до препятствия
   if (currentDistance < DISTANCE_TO_BLOCKAGE_CM) {  // Если текущая дистанция меньше максимальной дистанции до препятсвия
